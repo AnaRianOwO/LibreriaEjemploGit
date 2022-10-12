@@ -8,7 +8,7 @@
 
 <div class="banner">
 <ul>
-<a href="sucursales/">Sucursales</a> 
+<a href="sucursales/sucursales.html">Sucursales</a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -16,18 +16,22 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="">Ficha Bibliografica</a>
+<a href="" id="ficha">Fichas Bibliograficas</a>
+    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="precioYMas/">Precio</a>
+<a href="precioYMas/precios y mas .html">Precio</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="">Mas</a>
 </ul>
 </div>
-
+<ul id="fichas">
+    <li><a href="fichaBibliografica/fichabibliografica.html">Harry Potter</a></li>
+    <li><a href="fichaBibliografica/fichasantanas.html">Satanas de Mario Mendoza</a></li>
+    <li><a href="fichaBibliografica/fichacriada.html">Cuento de la Criada</a></li>
+</ul>
 
 <h1>Libros en venta</h1>
 
@@ -60,8 +64,11 @@
 <br>
 </div>
 
-
-
-
+<script>
+    var ficha = document.getElementById(ficha);
+    ficha.addEventListener(mouseover, ()=>{
+        document.getElementById(fichas).style.display = "block";
+    })
+</script>
 </body>
 </html>

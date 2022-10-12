@@ -40,4 +40,6 @@
 	border-radius:20px;
 }
 
-
+.fichas {
+    display: none;
+}

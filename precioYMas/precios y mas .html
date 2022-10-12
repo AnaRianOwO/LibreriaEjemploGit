@@ -5,7 +5,7 @@
 </head>
 <body>
     <center>
-    <table border="10">
+    <table border="10" id="tabla">
         <tr>
             <td>Libro</td>
             <td>Precio</td>
@@ -37,6 +37,39 @@
             <td>Tapa blanda - Editorial Salamandra </td>
         </tr>
     </table>
-    </center>   
+    </center>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        #tabla {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            background-color: aliceblue;
+        }
+    
+        table{
+        background-color: white;
+        text-align: left;
+        border-collapse: collapse;
+        width: 40%;
+        }
+    
+        th, td{
+        padding: 20px;
+        }
+    
+        tr:nth-child(even){
+        background-color: #ddd;
+        }
+    
+        tr:hover td{
+        background-color: #369681;
+        color: white;
+        }
+    </style>  
 </body>
 </html>
