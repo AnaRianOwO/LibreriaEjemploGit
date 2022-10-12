@@ -3,17 +3,43 @@
 <head>
 <title>Sucursales</title>
 <style>
-    .tabla {
+    body {
+        background-color: blanchedalmond;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #tabla {
         text-align: center;
         justify-content: center;
         display: flex;
         background-color: aliceblue;
     }
+
+    table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 40%;
+    }
+
+    th, td{
+	padding: 20px;
+    }
+
+    tr:nth-child(even){
+	background-color: #ddd;
+    }
+
+    tr:hover td{
+	background-color: #369681;
+	color: white;
+    }
 </style>
 </head>
 <body>
-    <div id="tabla"><center>
-    <table border="1">
+    <h1>Sucursales</h1>
+    <div>
+    <table border="1" id="tabla">
         <tr>
             <td>Dirección</td>
             <td>Horario de atención</td>
@@ -35,5 +61,5 @@
             <td>314 7066614</td>
         </tr>
     </table>
-</div></center>
+</div>
 </body>
